@@ -12,6 +12,9 @@
 		8ED6A98F2140178C00FC395A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED6A98E2140178C00FC395A /* Assets.xcassets */; };
 		8ED6A9922140178C00FC395A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED6A9902140178C00FC395A /* LaunchScreen.storyboard */; };
 		9D5CCA55214231DD00224681 /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CCA54214231DD00224681 /* ConcurrentOperation.swift */; };
+		EB8BB7F42204BEA6009A833D /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8BB7F32204BEA6009A833D /* UserTableViewCell.swift */; };
+		EB8BB7F62204BEB8009A833D /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8BB7F52204BEB8009A833D /* UsersTableViewController.swift */; };
+		EB8BB7F82204BED1009A833D /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8BB7F72204BED1009A833D /* UserDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		8ED6A9912140178C00FC395A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ED6A9932140178C00FC395A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D5CCA54214231DD00224681 /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperation.swift; sourceTree = "<group>"; };
+		EB8BB7F32204BEA6009A833D /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		EB8BB7F52204BEB8009A833D /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		EB8BB7F72204BED1009A833D /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		8ED6A9862140178A00FC395A /* Random Users */ = {
 			isa = PBXGroup;
 			children = (
+				EB8BB7F12204B4E9009A833D /* View Controller */,
+				EB8BB7F02204B4CF009A833D /* Model Controller */,
+				EB8BB7EF2204B4B6009A833D /* Model */,
 				8ED6A9872140178A00FC395A /* AppDelegate.swift */,
 				9D5CCA56214231E400224681 /* Operations */,
 				9D5CCA522142305600224681 /* Resources */,
@@ -78,6 +87,30 @@
 				9D5CCA54214231DD00224681 /* ConcurrentOperation.swift */,
 			);
 			path = Operations;
+			sourceTree = "<group>";
+		};
+		EB8BB7EF2204B4B6009A833D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB8BB7F02204B4CF009A833D /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		EB8BB7F12204B4E9009A833D /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB8BB7F32204BEA6009A833D /* UserTableViewCell.swift */,
+				EB8BB7F52204BEB8009A833D /* UsersTableViewController.swift */,
+				EB8BB7F72204BED1009A833D /* UserDetailViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +145,7 @@
 				TargetAttributes = {
 					8ED6A9832140178A00FC395A = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -152,6 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED6A9882140178A00FC395A /* AppDelegate.swift in Sources */,
+				EB8BB7F82204BED1009A833D /* UserDetailViewController.swift in Sources */,
+				EB8BB7F42204BEA6009A833D /* UserTableViewCell.swift in Sources */,
+				EB8BB7F62204BEB8009A833D /* UsersTableViewController.swift in Sources */,
 				9D5CCA55214231DD00224681 /* ConcurrentOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +342,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LambdaSchool.RandomUsers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -323,7 +360,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LambdaSchool.RandomUsers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
