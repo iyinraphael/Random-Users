@@ -10,8 +10,11 @@ import UIKit
 
 class UsersTableViewController: UITableViewController {
 
+    let userController = UserController()
     override func viewDidLoad() {
         super.viewDidLoad()
+        userController.getPerson()
+        
     }
 
     // MARK: - Table view data source

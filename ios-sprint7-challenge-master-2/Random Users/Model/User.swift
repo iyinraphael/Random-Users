@@ -57,6 +57,6 @@ struct User: Decodable {
     
 }
 
-struct Result{
-    let result: [User]
+struct Result: Decodable{
+    let results: [User]
 }
