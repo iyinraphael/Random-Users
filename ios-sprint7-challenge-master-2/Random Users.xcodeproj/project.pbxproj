@@ -15,6 +15,8 @@
 		EB8BB7F42204BEA6009A833D /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8BB7F32204BEA6009A833D /* UserTableViewCell.swift */; };
 		EB8BB7F62204BEB8009A833D /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8BB7F52204BEB8009A833D /* UsersTableViewController.swift */; };
 		EB8BB7F82204BED1009A833D /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8BB7F72204BED1009A833D /* UserDetailViewController.swift */; };
+		EB8BB7FA2204C0E5009A833D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8BB7F92204C0E5009A833D /* User.swift */; };
+		EB8BB7FC2207A9BC009A833D /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8BB7FB2207A9BC009A833D /* UserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		EB8BB7F32204BEA6009A833D /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		EB8BB7F52204BEB8009A833D /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		EB8BB7F72204BED1009A833D /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		EB8BB7F92204C0E5009A833D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EB8BB7FB2207A9BC009A833D /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		EB8BB7EF2204B4B6009A833D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EB8BB7F92204C0E5009A833D /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 		EB8BB7F02204B4CF009A833D /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EB8BB7FB2207A9BC009A833D /* UserController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -187,7 +193,9 @@
 			files = (
 				8ED6A9882140178A00FC395A /* AppDelegate.swift in Sources */,
 				EB8BB7F82204BED1009A833D /* UserDetailViewController.swift in Sources */,
+				EB8BB7FA2204C0E5009A833D /* User.swift in Sources */,
 				EB8BB7F42204BEA6009A833D /* UserTableViewCell.swift in Sources */,
+				EB8BB7FC2207A9BC009A833D /* UserController.swift in Sources */,
 				EB8BB7F62204BEB8009A833D /* UsersTableViewController.swift in Sources */,
 				9D5CCA55214231DD00224681 /* ConcurrentOperation.swift in Sources */,
 			);
