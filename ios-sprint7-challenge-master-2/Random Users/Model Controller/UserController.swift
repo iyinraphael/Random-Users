@@ -31,7 +31,6 @@ class UserController{
             
             do{
                 self.users = try JSONDecoder().decode(Result.self, from: data).results
-                print(self.users)
                 completion(nil)
             } catch {
                 NSLog("Error Decoding data \(error)")

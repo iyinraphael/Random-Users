@@ -12,4 +12,18 @@ class UserTableViewCell: UITableViewCell {
 
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    
+    var user: User?{
+        didSet{
+            update()
+        }
+    }
+    
+    func update(){
+        if let user = user {
+           let imageData = try? Data(contentsOf: user.pictureSmall)
+            userImageView.image = UIImage(data: imageData!)
+            nameLabel.text = "\(user.title) \(user.firstName) \(user.lastName)"
+        }
+    }
 }
