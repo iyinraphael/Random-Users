@@ -80,6 +80,10 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-9V-b0n">
                                         <rect key="frame" x="4" y="0.0" width="303" height="322"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="303" id="KNt-oc-Hi1"/>
+                                            <constraint firstAttribute="height" constant="322" id="rC8-R4-uUo"/>
+                                        </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="43s-Zt-fqT">
                                         <rect key="frame" x="0.0" y="373" width="311" height="98"/>

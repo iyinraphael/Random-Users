@@ -23,7 +23,6 @@ class UsersTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return userController.users.count
     }
 
@@ -39,7 +38,9 @@ class UsersTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showSegue"{
             let detailVC = segue.destination as! UserDetailViewController
+            let index = tableView.indexPathForSelectedRow!
             detailVC.userController = userController
+            detailVC.user = userController.users[index.row]
         }
     }
 
